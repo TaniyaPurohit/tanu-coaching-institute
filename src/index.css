@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: var(--border, theme('colors.slate.200'));
+  }
+}
+
+/* Custom Print Styles for Clean Receipt Printing */
+@media print {
+  /* Hide all app chrome, navigation, buttons, and backdrop */
+  body * {
+    visibility: hidden !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+
+  /* Make receipt container and its children visible and fill page */
+  #printable-receipt,
+  #printable-receipt * {
+    visibility: visible !important;
+  }
+
+  #printable-receipt {
+    position: fixed !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 24px !important;
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: none !important;
+    z-index: 99999 !important;
+  }
+}

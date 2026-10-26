@@ -1,0 +1,6 @@
+{
+  "name": "EduTrack Coaching Institute Management",
+  "description": "Comprehensive coaching institute management app with student admissions, batch scheduling, attendance tracking, fee collection with printable receipts, test analytics, and Gemini AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
